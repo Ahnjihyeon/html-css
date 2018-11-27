@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css속성-배경 관련</title>
+<!--
+    인물의 외곽만 따오기 -> ex1.png, ex2.png
+    jpg 배경 이미지 2개
+-->
+<style>
+    *{margin:0; padding:0;}  
+    body, html {width: 100%;height: 100%;}
+    h1 {text-align: center; color:#fff;}
+    .page{clear:both; height: 100%; width: 100%; overflow:hidden;}
+    .back1 {background: url("./images/O1.png")bottom/50% no-repeat fixed,#09C;}
+/*                       image positon/size repeat attachment*/
+    .back2 {background-color:aqua; background-color:#333;color:#fff;}
+    .back3 {background-image:url("./images/O2.png"), url("./images/bgimg1.jpg"); background-repeat:no-repeat, repeat; background-position:center center;}
+    .back4 {background-image:url("./images/bg1.jpg"); background-size:cover;background-attachment:scroll;}
+    .back5 {background:rgba(128, 180, 10, 0.8)}
+    .back6 {background:hsla(240, 40%, 30%,0.5)}
+    .back7 {background:linear-gradient(-40deg, red, yellow);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+background: #efc5ca; /* Old browsers */
+background: -moz-linear-gradient(left, #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 ); /* IE6-9 */}
+</style>
+</head>
+<body>
+    <article class="page back1">
+        <h1>배경 속성 : background 통합 속성</h1>
+    </article>
+    <article class="page back2">
+        <h1>배경 색상 속성 : background-color</h1>
+    </article>
+    <article class="page back3">
+        <h1>배경 이미지 속성 : background-image</h1>
+        <h1>배경 반복 속성 : background-repeat</h1>
+        <h1>배경 위치 속성 : background-position</h1>
+    </article>
+    <article class="page back4">
+        <h1>배경 크기 속성 : background-size</h1>
+        <h1>배경 스크롤 속성 : background-attachment</h1>
+    </article>   
+    <article class="page back5"></article>
+    <article class="page back6"></article> 
+    <article class="page back7"></article> 
+</body>
+</html>
